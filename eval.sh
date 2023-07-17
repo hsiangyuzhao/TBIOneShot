@@ -1,0 +1,12 @@
+CUDA_VISIBLE_DEVICES="1" torchrun --nproc_per_node=1 eval.py -pc CANDIckpt/Epoch_2.pkl --exp_name candi_2 --task candi --verbose
+CUDA_VISIBLE_DEVICES="1" torchrun --nproc_per_node=1 eval.py -pc CANDIckpt/Epoch_4.pkl --exp_name candi_4 --task candi --verbose
+CUDA_VISIBLE_DEVICES="1" torchrun --nproc_per_node=1 eval.py -pc CANDIckpt/Epoch_6.pkl --exp_name candi_6 --task candi --verbose
+CUDA_VISIBLE_DEVICES="1" torchrun --nproc_per_node=1 eval.py -pc CANDIckpt/Epoch_8.pkl --exp_name candi_8 --task candi --verbose
+CUDA_VISIBLE_DEVICES="1" torchrun --nproc_per_node=1 eval.py -pc ABIDEckpt/Epoch_2.pkl --exp_name abide_2 --task abide_seen --verbose
+CUDA_VISIBLE_DEVICES="1" torchrun --nproc_per_node=1 eval.py -pc ABIDEckpt/Epoch_4.pkl --exp_name abide_4 --task abide_seen --verbose
+CUDA_VISIBLE_DEVICES="1" torchrun --nproc_per_node=1 eval.py -pc ABIDEckpt/Epoch_6.pkl --exp_name abide_6 --task abide_seen --verbose
+CUDA_VISIBLE_DEVICES="1" torchrun --nproc_per_node=1 eval.py -pc ABIDEckpt/Epoch_8.pkl --exp_name abide_8 --task abide_seen --verbose
+CUDA_VISIBLE_DEVICES="1" torchrun --nproc_per_node=1 eval.py -pc ABIDEckpt/Epoch_2.pkl --exp_name unseen_2 --task abide_unseen --verbose
+CUDA_VISIBLE_DEVICES="1" torchrun --nproc_per_node=1 eval.py -pc ABIDEckpt/Epoch_4.pkl --exp_name unseen_4 --task abide_unseen --verbose
+CUDA_VISIBLE_DEVICES="1" torchrun --nproc_per_node=1 eval.py -pc ABIDEckpt/Epoch_6.pkl --exp_name unseen_6 --task abide_unseen --verbose
+CUDA_VISIBLE_DEVICES="1" torchrun --nproc_per_node=1 eval.py -pc ABIDEckpt/Epoch_8.pkl --exp_name unseen_8 --task abide_unseen --verbose
